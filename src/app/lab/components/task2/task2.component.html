@@ -1,0 +1,8 @@
+<div class="container">
+    <h2>Second Task</h2>
+    <hr />
+    <h3 *ngIf="!message">Hello, Stranger</h3>
+    <h3 *ngIf="message">Hello, {{ message }}</h3>
+    <input type="text" [(ngModel)]="message">
+    <app-footer></app-footer>
+</div>

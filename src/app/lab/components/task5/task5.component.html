@@ -1,0 +1,14 @@
+<div class="container">
+    <h2>Fifth Task</h2>
+    <hr />
+    <p>Random list of dogs:</p>
+    <ul>
+        <li *ngFor="let b of breeds">
+            {{ b.name }}
+        </li>
+    </ul>
+    <button (click)="addBreed()" mat-raised-button color="primary">Add dog</button>
+    <button (click)="removeBreed()" mat-raised-button color="warn">Remove dog</button>
+    <button (click)="mixBreeds()" mat-raised-button>Mix dogs</button>
+    <app-footer></app-footer>
+</div>

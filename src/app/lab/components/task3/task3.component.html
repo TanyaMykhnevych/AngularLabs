@@ -1,0 +1,15 @@
+<div class="container">
+    <h2>Third Task</h2>
+    <hr />
+    <ol>
+        <li *ngFor="let breed of breeds">
+            <span>{{ breed.name }}</span>
+            <ul *ngIf="breed.subbreeds && breed.subbreeds.length" class="hasSubbreeds">
+                <li *ngFor="let subbreed of breed.subbreeds">
+                    {{subbreed}}
+                </li>
+            </ul>
+        </li>
+    </ol>
+    <app-footer></app-footer>
+</div>

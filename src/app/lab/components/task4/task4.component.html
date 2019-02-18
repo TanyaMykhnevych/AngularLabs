@@ -1,0 +1,13 @@
+<div class="container">
+    <h2>Fourth Task</h2>
+    <hr />
+    <p>Breed: {{ breedWithSubbreeds.name }}</p>
+    <p>Subbreeds:</p>
+    <ul>
+        <li *ngFor="let s of breedWithSubbreeds.subbreeds">
+            {{ s }}
+        </li>
+    </ul>
+    <button (click)="loadBreedsWithSubbreeds()" mat-stroked-button color="primary">Get dog info</button>
+    <app-footer></app-footer>
+</div>
